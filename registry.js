@@ -1,7 +1,7 @@
 let table = [{base:"start",quotes:[{key: "start2", value: 1111}]}];
 
 let b = "start";
-let q = "start2";
+let q = "start3";
 let pair_id = 1111;
 
 
@@ -21,7 +21,7 @@ if (itr === undefined) {
 } else {
     table.forEach((row) => {
         if (row.base === b) {
-            let itr2 = row.quotes.find(n2 => n2.key === "start2");
+            let itr2 = row.quotes.find(n2 => n2.key === "start3");
                 if (itr2 === undefined) {
                    row.quotes.push({
                        key: q,
