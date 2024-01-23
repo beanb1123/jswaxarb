@@ -21,22 +21,20 @@ if (itr === undefined) {
 } else {
     table.forEach((row) => {
         if (row.base === b) {
-            row.quotes.forEach((row2) => {
-                let itr2 = row.quotes.find(n2 => n2.key === "start2");
+            let itr2 = row.quotes.find(n2 => n2.key === "start2");
                 if (itr2 === undefined) {
-                   row2.push({
+                   row.quotes.push({
                        key: q,
                        value: pair_id
                 });
                 // if not modified - modify
                 } else {
-                    row2.forEach((row3) => {
-                        if (row3.key === q) {        
-                            row3.value = pair_id
+                    row.quotes.forEach((row2) => {
+                        if (row2.key === q) {        
+                            row2.value = pair_id
                         }
                     });                   
                 }
-            });
         }
     });
 }
