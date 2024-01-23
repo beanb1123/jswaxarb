@@ -4,9 +4,9 @@ let b = "start2";
 let q = { key: "start2", value: 1111 };
 
 for(let i = 1; i < 10; i++) {
-    reg[i].base = b;
+    reg[i][base] = b;
     for(let x = 1; x < 5; x++) {
-        reg[i].quote[x] = q;
+        reg[i][quote][x] = q;
     }
 }
 
