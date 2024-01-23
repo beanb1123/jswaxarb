@@ -1,13 +1,32 @@
-let reg = [{ base: "start", quote: [ { key: "start", value: 0000 } ] }]
+let table = [{ base: "start", quotes: [ {"start", 0000 } ] }]
 
 let b = "start2";
-let q = { key: "start2", value: 1111 };
+let q = "start2";
+let pair_id = 1111;
 
-for(let i = 1; i < 10; i++) {
-    reg[i]["base"] = b;
-    for(let x = 1; x < 5; x++) {
-        reg[i]["quote"][x] = q;
-    }
+
+let itr = table.find(n => n.base === "AL");
+
+console.log(itr);
+
+// does not exist - create
+if (itr === undefined) {
+    table.push({
+        base: b,
+        quotes: {
+            [q]: pair_id
+        }
+    });
+// if not modified - modify
+} else {
+    table.forEach((row) => {
+        if (row.base === b) {
+            row.quotes[q] = pair_id;
+        }
+    });
 }
 
-console.log(JSON.stringify(reg));
+
+console.log(JSON.stringify(table));
+
+    
