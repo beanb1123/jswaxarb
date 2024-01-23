@@ -22,7 +22,7 @@ if (itr === undefined) {
     table.forEach((row) => {
         if (row.base === b) {
             row.quotes.forEach((row2) => {
-                let itr2 = row2.find(n2 => n2.key === "start2");
+                let itr2 = row.quotes.find(n2 => n2.key === "start2");
                 if (itr2 === undefined) {
                    row2.push({
                        key: q,
