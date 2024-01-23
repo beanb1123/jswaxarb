@@ -1,6 +1,6 @@
 let table = [{ base: "start", quotes: [ {key: "start", value: 0000 } ] }]
 
-let b = "start2";
+let b = "start";
 let q = "start2";
 let pair_id = 1111;
 
