@@ -1,4 +1,4 @@
-let table = [{base:"start",quotes:{"start2":1111}}];
+let table = [{base:"start",quotes:[{key: "start2", 1111}]}];
 
 let b = "start";
 let q = "start2";
@@ -14,14 +14,14 @@ if (itr === undefined) {
     table.push({
         base: b,
         quotes: {
-            [q]: pair_id
+            [q].key: pair_id
         }
     });
 // if not modified - modify
 } else {
     table.forEach((row) => {
         if (row.base === b) {
-            row.quotes[q] = pair_id;
+            row.quotes[q].key = pair_id;
         }
     });
     table.forEach((row) => {
