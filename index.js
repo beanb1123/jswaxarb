@@ -1,10 +1,8 @@
 async function mine(tokens) {
-  eosio.require_auth("hookbuilders"_n);
 
   const arb = await basic.get_best_arb_opportunity(tokens);
   const sts = arb.length;
-  //  print(std::to_string(sts));
-  //check(tokens != tokens, "AAA");
+
   if (sts > 2) {
     //    check(arb.back().out_asset.quantity > tokens.quantity, "NO PROFIT FOR: " + tokens.quantity.to_string() + " - CLOSEST: (" + arb[0].in_asset.quantity.to_string() + " | " + arb[0].dex.to_string() + " => " + arb[1].in_asset.quantity.to_string() + " | " + arb[1].dex.to_string() + " => " + arb[2].in_asset.quantity.to_string() + " | " + arb[2].dex.to_string() + " => " + arb[2].out_asset.quantity.to_string() + ")");
   } else {
