@@ -14,7 +14,7 @@ if (itr === undefined) {
     table.push({
         base: b,
         quotes: {
-            [q].key: pair_id
+            [q]: { key: q, value; pair_id }
         }
     });
 // if not modified - modify
