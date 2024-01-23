@@ -1,4 +1,4 @@
-let table = [];
+let table = [{base:"start",quotes:{"start2":1111}}];
 
 let b = "start";
 let q = "start2";
