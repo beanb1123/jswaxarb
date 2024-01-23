@@ -5,7 +5,7 @@ let q = "start2";
 let pair_id = 1111;
 
 
-let itr = table.find(n => n.base === "AL");
+let itr = table.find(n => n.base === "start2");
 
 console.log(itr);
 
