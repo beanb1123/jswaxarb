@@ -24,6 +24,11 @@ if (itr === undefined) {
             row.quotes[q] = pair_id;
         }
     });
+    table.forEach((row) => {
+        if (row.base === b) {
+            row.quotes[q] = pair_id;
+        }
+    });
 }
 
 
