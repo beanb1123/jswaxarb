@@ -26,13 +26,13 @@ if (itr === undefined) {
                 if (itr2 === undefined) {
                    row2.push({
                        key: q,
-                       value: pair_id;
+                       value: pair_id
                 });
                 // if not modified - modify
                 } else {
                     row2.forEach((row3) => {
                         if (row3.key === q) {        
-                            row3.value = pair_id;
+                            row3.value = pair_id
                         }
                     });                   
                 }
