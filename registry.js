@@ -1,4 +1,4 @@
-let table = [{base:"start",quotes:[{key: "start2", value: 1111}]}];
+let table = [];
 
 let b = "start";
 let q = "start3";
