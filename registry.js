@@ -1,13 +1,13 @@
+let data = require('./defi.json');
+data = data.rows;
+
 let table = [];
 
-let b = "start";
-let q = "start3";
-let pair_id = 1111;
+for(d = 0; d < data.length; d++) {
 
+let base = data[d].
 
 let itr = table.find(n => n.base === "start");
-
-console.log(itr);
 
 // does not exist - create
 if (itr === undefined) {
@@ -38,8 +38,6 @@ if (itr === undefined) {
         }
     });
 }
-
-
-console.log(JSON.stringify(table));
+}
 
     
